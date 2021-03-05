@@ -8,9 +8,8 @@ import org.springframework.web.bind.annotation.ResponseBody;
 public class MyController {
 
   @ResponseBody
-  @RequestMapping("/Hello")
-  public String hello() {
-    System.out.println("Controller: Code from Controller");
+  @RequestMapping("/Public/Hello")
+  public String publicHello() {
     return "Hello from Controller";
   }
 }
